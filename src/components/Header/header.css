@@ -1,0 +1,19 @@
+.header {
+    background-color: #dde1e9;
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-home-img {
+    padding-left: 50px;
+  }
+  
+  .header span a {
+    display: flex;
+    padding-right: 50px;
+    font-family: "Work Sans", sans-serif;
+    font-size: 14px;
+    color: black;
+  }
