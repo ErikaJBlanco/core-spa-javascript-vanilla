@@ -1,11 +1,15 @@
-const URI = 'API_URL_HERE';
+const URI = 'https://api.openweathermap.org/data/2.5/weather?q=';
+const API_KEY = '909532ae4d5f7f3ccbaf9cef6ebacad5';
 
-const getData = async () => {
+
+
+const getData = async (ciudad) => {
+
+    const URL_API = `${URI}${ciudad}&appid=${API_KEY}`;
 
     try{
-        const response = await fetch(URI);
+        const response = await fetch(URL_API);
         const data = await response.json();
-        console.log(data);
         return data;
     }
     catch(error) {
